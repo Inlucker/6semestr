@@ -60,4 +60,28 @@ RED
 ;3)
 (defun f3 (ar1)
 	(list (list (list ar1))))
-;4)
+;cons 1)
+(defun f1 (ar1 ar2 ar3 ar4)
+	(cons
+		(cons
+			ar1
+			(cons ar2 nil))
+		(cons
+			(cons
+				ar3
+				(cons ar4 nil))
+			nil)))
+;cons 2)
+(defun f2 (ar1 ar2)
+	(cons
+		(cons ar1 nil)
+		(cons
+			(cons ar2 nil)
+			nil)))
+;cons 3)
+(defun f3 (ar1)
+	(cons
+		(cons
+			(cons ar1 nil)
+			nil)
+		nil))
