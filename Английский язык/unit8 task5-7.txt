@@ -1,0 +1,26 @@
+TASK5
+C
+1) Reception use the patient database to identify children and old people
+	who are due to have vaccinations.
+2) Specially tailored software developed from the database
+3) All appointment dates and times for each doctor
+4) Daily lists of appointments 
+
+TASK6
+1) First of all click on the personal tab
+2) After that select male
+3) Enter Smith in 'Surname'
+4) Enter 16 in 'Age from' and 50 in 'To'
+5) Click on the registration tab
+6) Select doctors Warners and Roberts
+7) Click on 'Find' button
+
+TASK7
+1) by clicking on the Personal tab
+2) find the members of the Green family
+3) selecting 'Either'
+4) After that
+5) selected the Addres tab
+6) Then
+7) chosen the Registration tab
+8) Finaly, ... search the records
