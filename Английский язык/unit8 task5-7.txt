@@ -24,3 +24,13 @@ TASK7
 6) Then
 7) chosen the Registration tab
 8) Finaly, ... search the records
+
+TASK8
+1) standard
+2) standard
+3) developer
+4) small business
+5) Premium
+6) Proffesional
+7) Premium
+8) Proffesional (small business)
