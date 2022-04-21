@@ -1,0 +1,97 @@
+feature - признак
+invariant - инвариантный
+affine - аффинный
+neurons - нейроны
+inferior temporal cortex - нижняя височная кора
+primate - примат
+efficiently - эффективно
+through a staged filtering approach - с помощью поэтапной фильтрации
+scale space - масштабное пространство
+allow - допускать
+blurred image gradients - размытые градиенты изображения
+orientation planes - плоскости ориентации
+by representing - представляя
+input - взодные данные
+indexing method - метод индексации
+identifies candidate object matches - идентифицирует совпадения объектов-кандидатов
+verification - проверка
+match - совпадение
+achieve - достигать
+low-residual - минимальный остаток (Метод основан на минимизации суммы квадратов остатков)
+low-residual least-squares solution - решение методом наименьших квадратов (с минимизированными остатками)
+robust - надёжный
+cluttered - загроможденный (беспорядочный)
+cluttered partially-occluded images - беспорядочные частично закрытые изображения
+clutter - помехи
+occlusion - окклюзия
+partial - частичный
+sufficiently - достаточно
+distinctive - отличительный
+specific - конкретный
+is due in large part to - во многом связана с
+lack of success - отсутствие успеха
+However - Однако 
+recent - недавнее 
+dense - плотный
+local image descriptors - локальные дескрипторы изображений
+sampled - отобранных
+paper - сатья (документ)
+approach - подход
+translation - перемещение
+distortion - искажение
+The first stage - На первом этапе
+locations that are maxima or minima of a difference-of-Gaussian function - местоположения, которые являются максимумами или минимумами функции разности Гаусса
+local image region sampled relative to its scale-space coordinate frame - локальная область изображения, выбранная относительно ее системы координат масштабного пространства
+blurring - размытие
+complex - сложный
+cells - клетки
+cerebral cortex of mammalian vision - кора головного мозга зрения млекопитающих
+The resulting feature vectors - Полученные векторы признаков 
+implementation - реализация
+on the order of 100 - порядка 100
+derived - полученный
+nearest-neighbour approach to indexing - метод индексации ближайшего соседа
+candidate object models - модели объектов-кандидатов
+Collections - Наборы 
+that agree - которые согласуются 
+through - с помощью
+Hough transform hash table - хэш-таблица преобразования Хафа
+estimate - оценка
+agree - согласуются
+strong evidence - убедительные доказательства
+presence - присутствие
+dozens - десятки
+substantial levels of occlusion - значительные уровни окклюзии 
+and yet retain high levels of reliability - и при этом сохранять высокий уровень надежности
+represented - представлены
+undergo - подвергаться 
+planar shapes - плоские формы
+at up to a 60 degree rotation - при повороте до 60 градусов
+widely used - широко используется
+inspection - проверка
+current commercial systems - современные коммерческие системы
+depend almost exclusively on - зависят почти исключительно от
+correlation-based template matching - сопоставление шаблонов на основе корреляции
+certain - определенный
+environments - среды
+are tightly controlled - жестко контролируются
+template matching - сопоставление шаблонов 
+infeasible - невыполнимый (неосуществимый) 
+computationally - с вычислительной точки зрения
+and even more - и тем более 
+so when dealing with - при работе с 
+search all image locations for matches - поиск совпадений во всех местах изображения
+extract - извлечение (извлекать)
+that are at least partially invariant - которые хотя бы частично инвариантны
+image formation process - процесс формирования изображения
+were proposed - были предложены
+were explored - были исследованы
+proposals - предложения
+detect - обнаружить
+frequently - часто
+to form a basis for reliable recognition - сформировать основу для надежного распознавания
+corner detector - угловой детектор
+epipolar alignment of images - эпиполярное выравнивание изображений
+viewpoints - точки зрения
+Rather than - Вместо того, чтобы 
+correlate - сопоставить	
