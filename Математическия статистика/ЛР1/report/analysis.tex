@@ -1,0 +1,84 @@
+\chapter*{Отчёт}
+\section*{Формулы для вычисления величин}
+
+$M_{max}=max(\overrightarrow{x_n})$,
+ 
+$M_{min}=min(\overrightarrow{x_n})$,
+ 
+$R=M_{max}-M_{min}$
+ 
+$\stackrel{\wedge}{\mu}(\overrightarrow{x_n}) = \overline{x_n} = \frac{1}{n} \sum\limits_{i=1}^n x_i$
+
+$S^2(\overrightarrow{x_n})=\frac{1}{n-1} \sum\limits_{i=1}^n (x_i-\overline{x_n})^2 = \frac{n}{n-1} \stackrel{\wedge}{\sigma}^2(\overrightarrow{x})$, где $\stackrel{\wedge}{\sigma}^2(\overrightarrow{x}) = \frac{1}{n} \sum\limits_{i=1}^n (x_i-\overline{x_n})^2$
+
+\section*{Определения эмпирической плотности и гистограммы}
+\textbf{Определение} Эмпирической плотонстью, отвечающей интервальному ряду $(J_i, n_i), \overline{1,m}$ называется функция
+\begin{equation*}
+	\stackrel{\wedge}{f}(x) =
+	\begin{cases}
+		\frac{n_i}{n\Delta}, &\text{если $x\in J_i$;}\\
+		0, &\text{иначе,}
+	\end{cases}
+\end{equation*}
+где  $\Delta = \frac{x_{(n)}-x_{(1)}}{m}$,\newline
+$J_i=[x_{(1)}]+(i-1)\Delta, x_{(1)}+i\Delta], i=\overline{1,m}$,\newline
+$J_m=[x_{(1)}]+(m-1)\Delta, x_{(n)}]$,\newline
+а $m=[log_2 n]+2$ по заданию
+
+\textbf{Определение} График эмпирической плотности называется гистограммой.
+
+\newpage
+\section*{Определения эмпирической плотности и гистограммы}
+Пусть $\overrightarrow{x}=(x_1, ..., x_n)$ - выборка из генеральной совокупности $X$.
+
+Обозначим $n(t,\overrightarrow{x})$ - число компонент вектора $\overrightarrow{x}$, которые меншье чем t
+
+\textbf{Определение} Эмпирической функцие распределения, построенной по выборке $\overrightarrow{x}$, называют функцию
+
+$F_n(t): \mathds{R} \rightarrow \mathds{R}$,\newline
+определенную правилом $F_n(t)=\frac{n(t,\overrightarrow{x})}{n}$
+
+\section*{Текст программы}
+
+\matlabscript{inc/src/Lab1}{}
+
+\section*{Результаты расчетов}
+
+$M_{max} = -10.2500$
+
+$M_{mun} = -14.6000$
+
+$R = 4.3500$
+
+$\stackrel{\wedge}{\mu} = -12.6148$
+
+$S^2 = 0.8653$	
+
+$m = 8$
+
+$(J_i,n_i)=$
+\begin{flushleft}
+	\begin{tabular}{|c|c|c|c|} 
+		\hline
+		$J_i$ & [-14.6000;-14.0563) & [-14.0563;-13.5125) & [-13.5125;-12.9688) \\ 
+		\hline
+		$n_i$ & 4 & 18 & 20 \\ 
+		\hline
+	\end{tabular}
+
+	\begin{tabular}{|c|c|c|c|} 
+		\hline
+		$J_i$ & [-12.9688;-12.4250) & [-12.4250;-11.8812) & [-11.8812;-11.3375) \\ 
+		\hline
+		$n_i$ & 36 & 16 & 14 \\ 
+		\hline
+		
+	\end{tabular}
+	\begin{tabular}{|c|c|c|} 
+		\hline
+		$J_i$ & [-11.3375;-10.7937) & [-10.7937;-10.2500] \\ 
+		\hline
+		$n_i$ & 6 & 6 \\ 
+		\hline
+	\end{tabular}
+\end{flushleft}
