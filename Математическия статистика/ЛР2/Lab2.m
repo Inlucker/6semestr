@@ -17,15 +17,69 @@ dov_interval_sigma = get_dov_interval_sigma(X, 0.9);
 sigma_lower = dov_interval_sigma(1);
 sigma_upper = dov_interval_sigma(2);
 
-dov_interval_mu = get_dov_interval_mu_N(X, 0.9, 2);
-mu_lower = dov_interval_mu(1);
-mu_upper = dov_interval_mu(2);
+% dov_interval_mu = get_dov_interval_mu_N(X, 0.9, 2);
+% mu_lower = dov_interval_mu(1);
+% mu_upper = dov_interval_mu(2);
+% 
+% dov_interval_sigma = get_dov_interval_sigma_N(X, 0.9, 2);
+% sigma_lower = dov_interval_sigma(1);
+% sigma_upper = dov_interval_sigma(2);
 
-dov_interval_sigma = get_dov_interval_sigma_N(X, 0.9, 2);
-sigma_lower = dov_interval_sigma(1);
-sigma_upper = dov_interval_sigma(2);
+gamma = 0.9;
+mu_lower_y = [];
+mu_upper_y = [];
+mu_y = [];
+n_x = [];
+muN_y = [];
+n = size(X, 2);
+for i=1:n
+    tmp = get_dov_interval_mu_N(X, gamma, i);
+    mu_lower_y = [mu_lower_y tmp(1)];
+    mu_upper_y = [mu_upper_y tmp(2)];
+    Xn = X(1:i);
+    mu_y = [mu_y get_mu(Xn)];
+    muN_y = [muN_y mu];
+    n_x = [n_x i];
+end
 
-%Test
+figure('Position', [180 200 560 420]);
+hold on;
+plot(n_x, mu_lower_y);
+plot(n_x, mu_upper_y);
+plot(n_x, mu_y);
+plot(n_x, muN_y);
+grid;
+legend('Нижняя граница \mu(x_n)','Вверхняя граница \mu(x_n)','\mu(x_n)','\mu(x_N)');
+hold off;
+
+gamma = 0.9;
+sigma_lower_y = [];
+sigma_upper_y = [];
+sigma_y = [];
+n_x = [];
+sigmaN_y = [];
+n = size(X, 2);
+for i=1:n
+    tmp = get_dov_interval_sigma_N(X, gamma, i);
+    sigma_lower_y = [sigma_lower_y tmp(1)];
+    sigma_upper_y = [sigma_upper_y tmp(2)];
+    Xn = X(1:i);
+    sigma_y = [sigma_y get_Ssqr(Xn)];
+    sigmaN_y = [sigmaN_y Ssqr];
+    n_x = [n_x i];
+end
+
+figure('Position', [780 200 560 420]);
+hold on;
+plot(n_x, sigma_lower_y);
+plot(n_x, sigma_upper_y);
+plot(n_x, sigma_y);
+plot(n_x, sigmaN_y);
+grid;
+legend('Нижняя граница \sigma^2(x_n)','Вверхняя граница  \sigma^2(x_n)','S^2(x_n)','S^2(x_N)');
+hold off;
+
+%Test for compare
 % N = length(X);
 % gamma = 0.9;
 % 
@@ -42,6 +96,12 @@ sigma_upper = dov_interval_sigma(2);
 
 function mu = get_mu(X)
     mu = sum(X) / size(X, 2);
+end
+
+function sigmasqr = get_sigmasqr(X)
+    n = size(X, 2);
+    mu = get_mu(X);
+    sigmasqr = sum(power(X-mu, 2))/n;
 end
 
 function Ssqr = get_Ssqr(X)
@@ -65,6 +125,7 @@ end
 
 function dov_interval_sigma = get_dov_interval_sigma(X, gamma)
     Ssqr = get_Ssqr(X);
+%     Ssqr = get_sigmasqr(X);
     n = size(X, 2);
     alpha2 = (1-gamma)/2;
     alpha1 = 1 - alpha2;

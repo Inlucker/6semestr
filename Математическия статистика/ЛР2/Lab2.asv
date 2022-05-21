@@ -17,11 +17,70 @@ dov_interval_sigma = get_dov_interval_sigma(X, 0.9);
 sigma_lower = dov_interval_sigma(1);
 sigma_upper = dov_interval_sigma(2);
 
-dov_interval_mu = get_dov_interval_mu_N(X, 0.9, 3);
-mu_lower = dov_interval_mu(1)
-mu_upper = dov_interval_mu(2)
+% dov_interval_mu = get_dov_interval_mu_N(X, 0.9, 2);
+% mu_lower = dov_interval_mu(1);
+% mu_upper = dov_interval_mu(2);
+% 
+% dov_interval_sigma = get_dov_interval_sigma_N(X, 0.9, 2);
+% sigma_lower = dov_interval_sigma(1);
+% sigma_upper = dov_interval_sigma(2);
 
-%Test
+gamma = 0.9;
+mu_lower_y = [];
+mu_upper_y = [];
+mu_y = [];
+n_x = [];
+muN_y = [];
+n = size(X, 2);
+for i=1:n
+    tmp = get_dov_interval_mu_N(X, gamma, i);
+    mu_lower_y = [mu_lower_y tmp(1)];
+    mu_upper_y = [mu_upper_y tmp(2)];
+    Xn = X(1:i);
+    mu_y = [mu_y get_mu(Xn)];
+    muN_y = [muN_y mu];
+    n_x = [n_x i];
+end
+
+figure('Position', [180 200 560 420]);
+hold on;
+plot(n_x, mu_lower_y);
+plot(n_x, mu_upper_y);
+plot(n_x, mu_y);
+plot(n_x, muN_y);
+grid;
+legend('mu lower y','mu upper y','mu y','muN y');
+legend('_{--}\mu^(x_n)','^{--}\mu^(x_n)','\mu\^(x_N)','\mu\^(x_n)');
+hold off;
+
+gamma = 0.9;
+sigma_lower_y = [];
+sigma_upper_y = [];
+sigma_y = [];
+n_x = [];
+sigmaN_y = [];
+n = size(X, 2);
+for i=1:n
+    tmp = get_dov_interval_sigma_N(X, gamma, i);
+    sigma_lower_y = [sigma_lower_y tmp(1)];
+    sigma_upper_y = [sigma_upper_y tmp(2)];
+    Xn = X(1:i);
+    sigma_y = [sigma_y get_Ssqr(Xn)];
+    sigmaN_y = [sigmaN_y Ssqr];
+    n_x = [n_x i];
+end
+
+figure('Position', [780 200 560 420]);
+hold on;
+plot(n_x, sigma_lower_y);
+plot(n_x, sigma_upper_y);
+plot(n_x, sigma_y);
+plot(n_x, sigmaN_y);
+grid;
+legend('sigma lower y','sigma upper y','sigma y','sigmaN y');
+hold off;
+
+%Test for compare
 % N = length(X);
 % gamma = 0.9;
 % 
@@ -76,9 +135,10 @@ function dov_interval_mu = get_dov_interval_mu_N(X, gamma, N)
     dov_interval_mu = get_dov_interval_mu(Xn, gamma);
 end
 
-% function dov_interval_sigma = get_dov_interval_sigma(X, gamma, N)
-%     
-% end
+function dov_interval_sigma = get_dov_interval_sigma_N(X, gamma, N)
+    Xn = X(1:N);
+    dov_interval_sigma = get_dov_interval_sigma(Xn, gamma);
+end
 
 %test functions
 function array_of_mu = get_array_of_mu(X, N)
