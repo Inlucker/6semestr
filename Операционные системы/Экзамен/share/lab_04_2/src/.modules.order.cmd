@@ -1,0 +1,1 @@
+cmd_/home/arseny/shared/lab_04_2/src/modules.order := {   echo /home/arseny/shared/lab_04_2/src/fortune.ko;   echo /home/arseny/shared/lab_04_2/src/seqfile.ko; :; } | awk '!x[$$0]++' - > /home/arseny/shared/lab_04_2/src/modules.order

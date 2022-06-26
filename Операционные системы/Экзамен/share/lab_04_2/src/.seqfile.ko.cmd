@@ -1,0 +1,1 @@
+cmd_/home/arseny/shared/lab_04_2/src/seqfile.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/arseny/shared/lab_04_2/src/seqfile.ko /home/arseny/shared/lab_04_2/src/seqfile.o /home/arseny/shared/lab_04_2/src/seqfile.mod.o;  true

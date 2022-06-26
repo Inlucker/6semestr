@@ -1,0 +1,1 @@
+cmd_/home/arseny/shared/lab_04_2/src/Module.symvers := sed 's/ko$$/o/' /home/arseny/shared/lab_04_2/src/modules.order | scripts/mod/modpost -m -a   -o /home/arseny/shared/lab_04_2/src/Module.symvers -e -i Module.symvers   -T -

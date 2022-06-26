@@ -1,0 +1,1 @@
+cmd_/home/arseny/shared/lab_07/src/myfs.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/arseny/shared/lab_07/src/myfs.ko /home/arseny/shared/lab_07/src/myfs.o /home/arseny/shared/lab_07/src/myfs.mod.o;  true

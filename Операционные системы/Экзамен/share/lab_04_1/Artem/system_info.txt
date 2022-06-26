@@ -1,0 +1,247 @@
+======================= /proc/cpuinfo ======================
+processor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 25
+model		: 80
+model name	: AMD Ryzen 5 5600H with Radeon Graphics
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 3293.694
+cache size	: 512 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx fxsr_opt rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni ssse3 cx16 sse4_1 sse4_2 hypervisor lahf_lm cmp_legacy cr8_legacy 3dnowprefetch vmmcall fsgsbase invpcid arat
+bugs		: fxsave_leak sysret_ss_attrs spectre_v1 spectre_v2 spec_store_bypass
+bogomips	: 6587.38
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 25
+model		: 80
+model name	: AMD Ryzen 5 5600H with Radeon Graphics
+stepping	: 0
+microcode	: 0xffffffff
+cpu MHz		: 3293.694
+cache size	: 512 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx fxsr_opt rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni ssse3 cx16 sse4_1 sse4_2 hypervisor lahf_lm cmp_legacy cr8_legacy 3dnowprefetch vmmcall fsgsbase invpcid arat
+bugs		: fxsave_leak sysret_ss_attrs spectre_v1 spectre_v2 spec_store_bypass
+bogomips	: 6587.38
+TLB size	: 2560 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 48 bits physical, 48 bits virtual
+power management:
+
+
+
+======================= /proc/loadavg ======================
+0.38 0.11 0.04 3/431 2794
+
+
+======================= /proc/meminfo ======================
+MemTotal:        4023212 kB
+MemFree:         1766852 kB
+MemAvailable:    2635036 kB
+Buffers:           55720 kB
+Cached:           995308 kB
+SwapCached:            0 kB
+Active:           430804 kB
+Inactive:        1657100 kB
+Active(anon):       1324 kB
+Inactive(anon):  1040752 kB
+Active(file):     429480 kB
+Inactive(file):   616348 kB
+Unevictable:          16 kB
+Mlocked:              16 kB
+SwapTotal:        945416 kB
+SwapFree:         945416 kB
+Dirty:              1840 kB
+Writeback:             0 kB
+AnonPages:       1036968 kB
+Mapped:           338576 kB
+Shmem:             11420 kB
+KReclaimable:      50652 kB
+Slab:             103200 kB
+SReclaimable:      50652 kB
+SUnreclaim:        52548 kB
+KernelStack:        6912 kB
+PageTables:        15588 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     2957020 kB
+Committed_AS:    3859772 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       34648 kB
+VmallocChunk:          0 kB
+Percpu:             1384 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      159680 kB
+DirectMap2M:     4034560 kB
+
+
+======================= /proc/modules ======================
+fortune 20480 0 - Live 0x0000000000000000 (OE)
+vboxsf 36864 1 - Live 0x0000000000000000
+binfmt_misc 24576 1 - Live 0x0000000000000000
+nls_iso8859_1 16384 1 - Live 0x0000000000000000
+snd_intel8x0 45056 2 - Live 0x0000000000000000
+snd_ac97_codec 139264 1 snd_intel8x0, Live 0x0000000000000000
+ac97_bus 16384 1 snd_ac97_codec, Live 0x0000000000000000
+snd_pcm 114688 2 snd_intel8x0,snd_ac97_codec, Live 0x0000000000000000
+snd_seq_midi 20480 0 - Live 0x0000000000000000
+snd_seq_midi_event 16384 1 snd_seq_midi, Live 0x0000000000000000
+snd_rawmidi 36864 1 snd_seq_midi, Live 0x0000000000000000
+intel_rapl_msr 20480 0 - Live 0x0000000000000000
+snd_seq 73728 2 snd_seq_midi,snd_seq_midi_event, Live 0x0000000000000000
+snd_seq_device 16384 3 snd_seq_midi,snd_rawmidi,snd_seq, Live 0x0000000000000000
+intel_rapl_common 24576 1 intel_rapl_msr, Live 0x0000000000000000
+snd_timer 40960 2 snd_pcm,snd_seq, Live 0x0000000000000000
+joydev 24576 0 - Live 0x0000000000000000
+snd 94208 11 snd_intel8x0,snd_ac97_codec,snd_pcm,snd_rawmidi,snd_seq,snd_seq_device,snd_timer, Live 0x0000000000000000
+input_leds 16384 0 - Live 0x0000000000000000
+soundcore 16384 1 snd, Live 0x0000000000000000
+vboxguest 45056 1 vboxsf, Live 0x0000000000000000
+mac_hid 16384 0 - Live 0x0000000000000000
+serio_raw 20480 0 - Live 0x0000000000000000
+sch_fq_codel 20480 2 - Live 0x0000000000000000
+vmwgfx 311296 5 - Live 0x0000000000000000
+ttm 73728 1 vmwgfx, Live 0x0000000000000000
+drm_kms_helper 237568 1 vmwgfx, Live 0x0000000000000000
+cec 53248 1 drm_kms_helper, Live 0x0000000000000000
+rc_core 61440 1 cec, Live 0x0000000000000000
+fb_sys_fops 16384 1 drm_kms_helper, Live 0x0000000000000000
+syscopyarea 16384 1 drm_kms_helper, Live 0x0000000000000000
+sysfillrect 16384 1 drm_kms_helper, Live 0x0000000000000000
+sysimgblt 16384 1 drm_kms_helper, Live 0x0000000000000000
+msr 16384 0 - Live 0x0000000000000000
+parport_pc 45056 0 - Live 0x0000000000000000
+ppdev 24576 0 - Live 0x0000000000000000
+lp 20480 0 - Live 0x0000000000000000
+parport 65536 3 parport_pc,ppdev,lp, Live 0x0000000000000000
+drm 548864 8 vmwgfx,ttm,drm_kms_helper, Live 0x0000000000000000
+ip_tables 32768 0 - Live 0x0000000000000000
+x_tables 49152 1 ip_tables, Live 0x0000000000000000
+autofs4 45056 2 - Live 0x0000000000000000
+hid_generic 16384 0 - Live 0x0000000000000000
+usbhid 57344 0 - Live 0x0000000000000000
+hid 135168 2 hid_generic,usbhid, Live 0x0000000000000000
+ahci 40960 2 - Live 0x0000000000000000
+psmouse 155648 0 - Live 0x0000000000000000
+libahci 36864 1 ahci, Live 0x0000000000000000
+i2c_piix4 28672 0 - Live 0x0000000000000000
+e1000 143360 0 - Live 0x0000000000000000
+pata_acpi 16384 0 - Live 0x0000000000000000
+video 53248 0 - Live 0x0000000000000000
+
+
+======================= /proc/mounts ======================
+sysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+udev /dev devtmpfs rw,nosuid,noexec,relatime,size=1978868k,nr_inodes=494717,mode=755,inode64 0 0
+devpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
+tmpfs /run tmpfs rw,nosuid,nodev,noexec,relatime,size=402324k,mode=755,inode64 0 0
+/dev/sda5 / ext4 rw,relatime,errors=remount-ro 0 0
+securityfs /sys/kernel/security securityfs rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /dev/shm tmpfs rw,nosuid,nodev,inode64 0 0
+tmpfs /run/lock tmpfs rw,nosuid,nodev,noexec,relatime,size=5120k,inode64 0 0
+tmpfs /sys/fs/cgroup tmpfs ro,nosuid,nodev,noexec,mode=755,inode64 0 0
+cgroup2 /sys/fs/cgroup/unified cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate 0 0
+cgroup /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,xattr,name=systemd 0 0
+pstore /sys/fs/pstore pstore rw,nosuid,nodev,noexec,relatime 0 0
+none /sys/fs/bpf bpf rw,nosuid,nodev,noexec,relatime,mode=700 0 0
+cgroup /sys/fs/cgroup/net_cls,net_prio cgroup rw,nosuid,nodev,noexec,relatime,net_cls,net_prio 0 0
+cgroup /sys/fs/cgroup/cpu,cpuacct cgroup rw,nosuid,nodev,noexec,relatime,cpu,cpuacct 0 0
+cgroup /sys/fs/cgroup/pids cgroup rw,nosuid,nodev,noexec,relatime,pids 0 0
+cgroup /sys/fs/cgroup/cpuset cgroup rw,nosuid,nodev,noexec,relatime,cpuset 0 0
+cgroup /sys/fs/cgroup/devices cgroup rw,nosuid,nodev,noexec,relatime,devices 0 0
+cgroup /sys/fs/cgroup/hugetlb cgroup rw,nosuid,nodev,noexec,relatime,hugetlb 0 0
+cgroup /sys/fs/cgroup/rdma cgroup rw,nosuid,nodev,noexec,relatime,rdma 0 0
+cgroup /sys/fs/cgroup/memory cgroup rw,nosuid,nodev,noexec,relatime,memory 0 0
+cgroup /sys/fs/cgroup/freezer cgroup rw,nosuid,nodev,noexec,relatime,freezer 0 0
+cgroup /sys/fs/cgroup/perf_event cgroup rw,nosuid,nodev,noexec,relatime,perf_event 0 0
+cgroup /sys/fs/cgroup/blkio cgroup rw,nosuid,nodev,noexec,relatime,blkio 0 0
+systemd-1 /proc/sys/fs/binfmt_misc autofs rw,relatime,fd=28,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=13892 0 0
+hugetlbfs /dev/hugepages hugetlbfs rw,relatime,pagesize=2M 0 0
+mqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0
+tracefs /sys/kernel/tracing tracefs rw,nosuid,nodev,noexec,relatime 0 0
+debugfs /sys/kernel/debug debugfs rw,nosuid,nodev,noexec,relatime 0 0
+/dev/loop1 /snap/bare/5 squashfs ro,nodev,relatime 0 0
+/dev/loop0 /snap/core18/2284 squashfs ro,nodev,relatime 0 0
+/dev/loop2 /snap/core20/1328 squashfs ro,nodev,relatime 0 0
+/dev/loop4 /snap/core20/1405 squashfs ro,nodev,relatime 0 0
+/dev/loop3 /snap/core18/2344 squashfs ro,nodev,relatime 0 0
+/dev/loop5 /snap/gnome-3-38-2004/87 squashfs ro,nodev,relatime 0 0
+/dev/loop6 /snap/gnome-3-34-1804/72 squashfs ro,nodev,relatime 0 0
+fusectl /sys/fs/fuse/connections fusectl rw,nosuid,nodev,noexec,relatime 0 0
+configfs /sys/kernel/config configfs rw,nosuid,nodev,noexec,relatime 0 0
+/dev/loop7 /snap/gnome-3-34-1804/77 squashfs ro,nodev,relatime 0 0
+/dev/loop8 /snap/gtk-common-themes/1519 squashfs ro,nodev,relatime 0 0
+/dev/loop9 /snap/snap-store/547 squashfs ro,nodev,relatime 0 0
+/dev/loop10 /snap/gtk-common-themes/1515 squashfs ro,nodev,relatime 0 0
+/dev/loop12 /snap/snap-store/558 squashfs ro,nodev,relatime 0 0
+/dev/loop13 /snap/snapd/15314 squashfs ro,nodev,relatime 0 0
+/dev/loop11 /snap/snapd/15177 squashfs ro,nodev,relatime 0 0
+/dev/loop14 /snap/gnome-3-38-2004/99 squashfs ro,nodev,relatime 0 0
+/dev/sda1 /boot/efi vfat rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro 0 0
+binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /run/user/1000 tmpfs rw,nosuid,nodev,relatime,size=402320k,mode=700,uid=1000,gid=1000,inode64 0 0
+gvfsd-fuse /run/user/1000/gvfs fuse.gvfsd-fuse rw,nosuid,nodev,relatime,user_id=1000,group_id=1000 0 0
+share /home/arseny/shared vboxsf rw,relatime 0 0
+
+
+======================= /proc/sys/vm/user_reserve_kbytes ======================
+123494
+
+
+======================= /proc/stat ======================
+cpu  2052 198 2990 922827 1086 0 562 0 0 0
+cpu0 1505 125 1597 457382 569 0 543 0 0 0
+cpu1 546 73 1393 465445 516 0 18 0 0 0
+intr 860360 30 938 0 0 0 0 0 0 0 0 0 0 762 0 0 4683 0 0 4611 3063 38011 19780 25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ctxt 800892
+btime 1649840710
+processes 2795
+procs_running 4
+procs_blocked 0
+softirq 1173699 6 535021 838 3283 21651 0 853 541196 0 70851
+
+
+======================= /proc/sys/kernel/sem ======================
+32000	1024000000	500	32000
+
+

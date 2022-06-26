@@ -1,0 +1,1 @@
+cmd_/home/arseny/shared/lab_03/pt1/src/md1.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000  --build-id  -T ./scripts/module-common.lds -o /home/arseny/shared/lab_03/pt1/src/md1.ko /home/arseny/shared/lab_03/pt1/src/md1.o /home/arseny/shared/lab_03/pt1/src/md1.mod.o;  true
